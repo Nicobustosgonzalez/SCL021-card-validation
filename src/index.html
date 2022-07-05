@@ -2,13 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Credit card validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+           
+    <h1>Credit card validation</h1>
+
+    <!--Card validation-->
+    <div class="number-input" id="number-input">
+      <p>Write your new card number</p>
+      <input type="text" id="ncard" value="" placeholder="0000 0000 0000 0000" pattern="^[0-9]+" maxlength="16" required><br><br>
+      <p>CVV Code</p>
+      <input  type="text" class="ncode" id="ncode" maxlength="3"><br><br>
+
+      <button  class="button-36validbtn" id="button-36validbtn">Validate</button>
+      <button  class="button-36restartbtn" id="button-36restartbtn">Start Again</button>
+    </div>
+
+    <!--alert-->
+    <div class= "alertBox" style="display:none">
+      <div class="alert-val">
+        <p id="valid"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</ul>
+</div >
+ 
     <script src="index.js" type="module"></script>
   </body>
 </html>
