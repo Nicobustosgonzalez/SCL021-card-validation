@@ -1,4 +1,14 @@
+
 import validator from './validator.js';
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
 function validateNumCard() {
     let numCard= document.getElementById('ncard').value;
@@ -20,7 +30,7 @@ function validateNumCard() {
 
     } else{
         alertBox[i].style.display= 'block';
-        document.getElementById('valid').innerText= '¡Your credit card ' + mask + ' is not valid!';
+        document.getElementById('invalid').innerText= '¡Your credit card ' + mask + ' is not valid!';
     }
 }
 }

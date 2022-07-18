@@ -5,20 +5,28 @@
     <title>Credit card validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
   <body>
-
-<div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Card Validation</a>
+      <a href="index2.html">Contact</a>
+      <a href="index3.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
            
     <h1>Credit card validation</h1>
 
@@ -34,17 +42,17 @@
     </div>
 
     <!--alert-->
-    <div class= "alertBox" style="display:none">
-      <div class="alert-val">
-        <p id="valid"></p>
-      </div>
-    </div>
-  </main>
+
+      <div class="alertBox" role="valid" p id="valid"></div>
+      <div class="invalidAlertBox" role="invalid" p id="invalid"></div>
+
+    
+  
+  
 
   <footer></footer>
-</ul>
-</div >
- 
     <script src="index.js" type="module"></script>
   </body>
+    </ul>
+</div>
 </html>

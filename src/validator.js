@@ -1,3 +1,5 @@
+
+
 const validator = {
   
 	isValid: function(numCard) {
